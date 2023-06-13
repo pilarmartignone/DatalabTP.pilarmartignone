@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Poppins:wght@200..1000&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 18.83vh;
+    background-color: #3D4E55;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 19vh;
+    background-color: #252E3B;
+    width: 100vw;
+    padding: 2vw;
+    min-height: 30vh;
+
+}
+
+nav div {
+
+    display: flex;
+    width: 32.11%;
+    justify-content: space-between;
+}
+
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 100vh;
+
+}
+
+main div {
+    width: 45.83%;
+
+
+}
+
+div img,
+video {
+
+    width: 100%;
+}
+
+video {
+    margin-top: 10%;
+}
+
+header {
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 40px;
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 125%;
+}
+
+nav h1 {
+    font-weight: 200;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #BB9F83;
+
+}
+
+header h3 {
+    text-transform: uppercase;
+    color: #3D4E55;
+    letter-spacing: 5px;
+}
+
+header p {
+    font-size: 20px;
+    color: #BB9F83;
+    width: 90%;
+}
+
+
+header a,
+nav a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+header a {
+    background-color: #83512D;
+    width: 250px;
+    transition-property: transform, background-color;
+    transition-duration: 1s;
+    transform: translateX(0px) translateY(0px);
+}
+
+header a:hover {
+    background-color: #3D4E55;
+    transform: translateX(10px) translateY(5px);
+}
+
+nav span {
+    display: none;
+}
+
+
+.icon-menu::before {
+    color: white;
+    font-size: 4vw;
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+}
+
+
+.lightboxOverlay {
+    background-color: white;
+}
+
+@media(max-width: 1024px) {
+
+    nav div {
+        width: 50%;
+    }
+
+    header,
+    section {
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+    nav span {
+        display: inline;
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 2vh;
+
+    }
+
+}
+
+
+nav {
+    animation-name: Movimiento;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes Movimiento {
+
+    0% {
+        background-color: #E4E4E4;
+        transform: translateY(0px);
+        border-radius: 50%;
+    }
+
+    50% {
+        background-color: #3D4E55;
+
+    }
+
+    100% {
+        background-color: #252E3B;
+        transform: translateX(0px) translateY(0px);
+        border-radius: 0%;
+    }
+
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #3D4E55;
+
+}
+
+/* 
+footer div {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
